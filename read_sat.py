@@ -23,7 +23,7 @@ for num in range(21):
             pol = 1
         else:
             pol = 0
-        str = "    {  %.0f,       %.0f     %d} ,\n" % (cell_freq, cell_sym, pol)
+        str = "    {  %.0f,       %.0f,     %d} ,\n" % (cell_freq, cell_sym, pol)
         f.write(str)
     f.write('\n')
     pass
