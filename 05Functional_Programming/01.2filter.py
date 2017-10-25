@@ -44,6 +44,8 @@ for n in primes():
 #练习:回数是指从左向右读和从右向左读都是一样的数，例如12321，909。请利用filter()滤掉非回数：
 def is_palindrome(n):
     num = str(n)
+    rev = num[::-1]
+    return num == rev
     pass
 
 # 测试:
