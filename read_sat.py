@@ -1,11 +1,14 @@
 #!python3
 
 import xlrd
+file = 'Strong Satellite Transponders Lists 11-10-2017.xlsx'
+#file = 'Strong Satellite Transponders Lists 16-10-2017_SS.xlsx'
+out = 'sat-11-10-2017.txt'
 
-data = xlrd.open_workbook('Strong Satellite Transponders Lists 11-10-2017.xlsx')
-f = open('sat.txt', 'w')
+data = xlrd.open_workbook(file)
+f = open(out, 'w')
 
-for num in range(21):
+for num in range(22):
     table = data.sheets()[num]
     title = table.cell(rowx=5,colx=0).value
     angle = table.cell(rowx=2,colx=0).value
